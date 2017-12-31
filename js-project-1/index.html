@@ -2,16 +2,68 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+
   <title>The First Little Big Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  
   <link rel="stylesheet" href="styles/custom.css">
-  <script src="scripts/script.js"></script>
 </head>
 
+
 <body>
-  <div class="container">
-    <h1>First Project Part 1</h1>
-    <p></p>
+  <h1 class="logo">
+    <img src="img/mash-logo.svg" />
+  </h1>
+  <h1>First Project Part 1</h1>
+  <p class="description"> Fill in the blanks and your future will be foretold.</p>
+
+  <form action="" method="post" id="mash"></form>
+
+  <div id="answers" class="hide">
+    <p> Your home is in
+      <span id="location"></span> with a
+      <span id="pet"></span> as you are a
+      <span id="location[]"></span> who owns a
+      <span id="home"></span>
+    </p>
   </div>
+
+  <div class="bucket">
+
+    <div class="choice-bucket">
+      <h4 class="highlight"> Where will you live? </h4>
+      <input name="location[]" type="text">
+      <input name="location[]" type="text">
+      <input name="location[]" type="text">
+      <input name="location[]" type="text">
+    </div>
+
+    <div class="choice-bucket">
+      <h4 class="highlight"> Your future profession?</h4>
+      <input name="profession[]" type="text">
+      <input name="profession[]" type="text">
+      <input name="profession[]" type="text">
+      <input name="profession[]" type="text">
+    </div>
+
+    <div class="choice-bucket">
+      <h4 class="highlight"> What's your future pet?</h4>
+      <input name="pet[]" type="text">
+      <input name="pet[]" type="text">
+      <input name="pet[]" type="text">
+      <input name="pet[]" type="text">
+    </div>
+  </div>
+
+  <input type="submit" value="Tell my fortune">
+  </form>
+
+  <script src="scripts/scripts.js"></script>
 
 </body>
 
